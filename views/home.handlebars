@@ -1,2 +1,14 @@
-<h1>This is my Handlebars Homepage</h1>
-<h2>{{stuff}}</h2>
+<div class="container text-light bg-dark rounded p-3">
+    <h1 class="display-4 bg-secondary text-light text-center rounded p-1 mx-auto w-75">{{stock.companyName}} [{{stock.symbol}}]</h1>
+    <p class="lead" style="margin-left: 5%;">
+        <strong>Latest Price: </strong>${{ stock.latestPrice }}</br>
+        <strong>Previous Close: </strong>${{ stock.previousClose }}</br>
+        <strong>Percent Change: </strong>{{ stock.changePercent }}%</br>
+        <strong>Market Cap: </strong>${{ stock.marketCap }}</br>
+        <strong>Year to Date Change: </strong>{{ stock.ytdChange }}%</br>
+        <strong>52 Week High: </strong>${{ stock.week52High }}</br>
+        <strong>52 Week Low: </strong>${{ stock.week52Low }}</br>
+    </p>
+</div>
+
+
